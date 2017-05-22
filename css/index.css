@@ -217,10 +217,10 @@ img{
 }
 .page3 .pic{
 	position: absolute;
-	left: 40vw;
-	top: 24vw;
-	width: 18vw;
-	height: 44vw;
+	left: 43%;
+	top: 10%;
+	width: 13%;
+	height: 32%;
 	/*background: red;*/
 }
 /*第四页*/
@@ -265,6 +265,7 @@ img{
 
 	height: 50%;
 	margin-top: 20%;
+	/*z-index: 1000;*/
 
 	
 

@@ -91,7 +91,7 @@
 		noop = function() {},
 
 		defaultOptions = {
-			size: [100, 100],
+			size: [126, 160],
 			adaptive: '',
 			outputSize: [0, 0],
 			outputType: 'jpg',
@@ -195,7 +195,7 @@
 
 		this._clipWidth = 0;
 		this._clipHeight = 0;
-		this._clipSizeRatio = 1.2; // 截取框宽高比
+		this._clipSizeRatio = 1; // 截取框宽高比
 
 		this._$img = null; // 图片的DOM对象
 		this._imgLoading = false; // 正在读取图片
@@ -296,7 +296,7 @@
 		this._$mask_left = createElement($mask, 'photo-clip-mask-left', {
 			'position': 'absolute',
 			'left': 0,
-			'right': '50%',
+			'right': '48%',
 			'top': '50%',
 			'bottom': '50%',
 			'width': 'auto',
@@ -331,7 +331,7 @@
 		this._$clip_frame = createElement($mask, 'photo-clip-area', {
 			'border': maskBorder,
 			'position': 'absolute',
-			'left': '53%',
+			'left': '52%',
 			'top': '50%'
 		});
 
