@@ -2,7 +2,7 @@
 
 //第一页loading
 
-count();
+//count();
 
 function count(){
 	
@@ -120,6 +120,8 @@ $('.backBtm img').click(function(){
 var height = $(window).height();
 
 $('.page3').height(height);
+
+$('.page3 .page3Container').height(height)
 
 //console.log(height);
 
