@@ -2,7 +2,7 @@
 
 //第一页loading
 
-count();
+//count();
 
 function count(){
 	
