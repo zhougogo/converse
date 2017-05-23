@@ -39,22 +39,23 @@ img{
 	display: none;
 }
 /*第一页*/
-.page1{
-	background: url(../img/loading/loading-bg.png) no-repeat center center;
+.pageBegin{
+	background: url(../img/p1-loading.gif) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
+
 .page1 .shone{
-	width: 82%;
-	position: absolute;
-	left: 10%;
+	width: 100%;
+
+
 }
 .page1 .loadText{
-	top: 62%;
+	top: 62.3%;
 	text-align: center;
 	color: white;
 
-	font-size: 5vw;
+	font-size: 4.5vw;
 	font-family: 'FZYTK.TTF'; 
 }
 
@@ -154,7 +155,58 @@ img{
 	top: 90%;
 }
 .page33 .personInfo p:last-child{
-	top: 86%;
+	top: 100%;
+}
+.personInfo2{
+	position: absolute;
+	top: 56%;
+	font-size: 2.6vw;
+	padding-top: 8vw;
+	padding-bottom: 4vw;
+	color: #fff;
+	background-size: 100%;
+	width: 80%;
+	height: 40%;
+}
+.personInfo2 .top{
+	position: absolute;
+	top: 12%;
+	left: 30%;
+}
+.personInfo2 .bottom{
+	position: absolute;
+	top: 44%;
+	/*bottom: 20%;*/
+	left: 30%;
+}
+.personInfo2 input{
+	border:none;
+	outline: none;
+	background-color:#183d8e; 
+	border-bottom:1px solid white;
+	width: 20%;
+	color: white;
+
+}
+.personInfo2 .top p{
+	line-height: 5.2vw;
+}
+.personInfo2 .bottom p{
+	line-height: 4.4vw;
+}
+.page33{
+	position: absolute;
+	z-index: -10;
+}
+.page33 .personInfo p:last-child{
+	top: 92%;
+}
+.page33 .logo{
+	width: 40%;
+	top: 88%;
+}
+.page33 .logo img{
+	width: 100%;
 }
 .personInfo input{
 	width: 12vw;
@@ -285,7 +337,7 @@ img{
 }
 .page33 p{
 	position: relative;
-	margin-top: 2px;
+	margin-top: 1px;
 }
 
 .spanText{
@@ -306,27 +358,12 @@ img{
 
 	
 }
-.spanText1{
+.spanText{
 	background-image: url(../img/space/space2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
-.spanText2{
-	background-image: url(../img/space/space3.png);
-}
-.spanText3{
-	background-image: url(../img/space/space4.png);
-}
-.spanText4{
-	background-image: url(../img/space/space5.png);
-}
-.spanText5{
-	background-image: url(../img/space/space6.png);
-}
-.spanText6{
-	background-image: url(../img/space/space7.png);
-}
-.spanText7{
-	background-image: url(../img/space/space8.png);
-}
+
 .bac6{
 	display: inline-block;
 	width: 50%;
@@ -335,6 +372,12 @@ img{
 .bac6 img{
 	width: 100%;
 	height: 100%;
+}
+
+/*第五页*/
+.page5{
+	position: absolute;
+	z-index: 1000;
 }
 /*第六页*/
 
@@ -349,14 +392,19 @@ img{
 	top: 10%;
 	background-color: white;
 }
+.page6 .center canvas{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
 .page6 .center img{
 	width: 100%;
 	height: 100%;
 }
 .page6 .erweima{
-	width: 20%;
+	width: 16%;
 	position: absolute;
-	top: 74%;
+	top: 78%;
 	left: 14%;
 }
 .page6 .copy{
