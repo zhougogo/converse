@@ -2,7 +2,7 @@
 
 //第一页loading
 
-//count();
+count();
 
 function count(){
 	
@@ -231,7 +231,7 @@ $('.backBtm img').click(function(){
 //第三页
 var height = $(window).height();
 
-$('.page3 .bg').height(height);
+$('.page3 .container').height(height);
 
 //$('.page3 .page3Container').height(height)
 
