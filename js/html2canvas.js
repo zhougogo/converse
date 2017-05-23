@@ -38,7 +38,7 @@
 						maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
 
 						/** Bootstring parameters */
-						base = 64,
+						base = 24,
 						tMin = 1,
 						tMax = 26,
 						skew = 38,
