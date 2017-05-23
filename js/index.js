@@ -231,7 +231,7 @@ $('.backBtm img').click(function(){
 //第三页
 var height = $(window).height();
 
-$('.page3 .container').height(height);
+$('.face .container').height(height);
 
 //$('.page3 .page3Container').height(height)
 
