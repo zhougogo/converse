@@ -82,7 +82,7 @@ function count2(){
 
 	var num = 0;
 	
-	$('.page5').addClass('pageBegin');
+	
 	
 	$('.page5 .loadText span').html(random+'%');
 	
@@ -149,6 +149,8 @@ function count2(){
 		
 		// console.log(123);
 		//高冷模式和话唠模式
+	
+		
 		for(var i = 0;i < $('.personInfo .text').length+1;i++){
 			
 			$('.personInfo .spanText'+i).html($('.personInfo .text'+i).val()) ;
@@ -165,13 +167,14 @@ function count2(){
 		$('.face').hide();
 
 		//截取图片
-		
+	
 
 
 
 		// $('.page5').show().siblings().hide();
 		
 		count2();
+		
 		
 	})
 
@@ -219,7 +222,9 @@ $('.footerBtnLeft').click(function(){
 
 $('.backBtm img').click(function(){
 	
-	$('.page3').show().siblings().hide();
+	
+	
+	$('.face').show().siblings().hide();
 	
 	console.log(123);
 })
