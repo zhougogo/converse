@@ -17,7 +17,9 @@ body{
 input{
 	-webkit-appearance: none;
 	resize: none;
-	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 img{
 	display: block;
@@ -172,14 +174,17 @@ img{
 .personInfo p .conText{
 	width: 32%;
 }
-.personInfo p:last-child{
+.face .personInfo p:last-child{
 	line-height: 4.2vw;
 	margin-left: 17vw;
 	position: absolute;
-	top: 114%;
+	top: 108%;
 }
 .page33 .personInfo p:last-child{
 	top: 100%;
+	line-height: 4.2vw;
+	margin-left: 17vw;
+	position: absolute;
 }
 .personInfo2{
 	position: absolute;
@@ -224,7 +229,7 @@ img{
 	z-index: -10;
 }
 .page33 .personInfo p:last-child{
-	top: 100%;
+	top: 92%;
 }
 .page33 .personInfo .lastText{
 	
