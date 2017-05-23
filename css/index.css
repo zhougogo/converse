@@ -144,10 +144,10 @@ img{
 }
 .personInfo{
 	position: absolute;
-	top: 54%;
+	top: 59%;
 	font-size: 3.0vw;
-	padding-top: 8vw;
-	padding-bottom: 4vw;
+
+
 	color: #fff;
 	background-size: 100%;
 	width: 80%;
@@ -176,7 +176,7 @@ img{
 	line-height: 4.2vw;
 	margin-left: 17vw;
 	position: absolute;
-	top: 100%;
+	top: 114%;
 }
 .page33 .personInfo p:last-child{
 	top: 100%;
