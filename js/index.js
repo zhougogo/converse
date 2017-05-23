@@ -257,12 +257,13 @@ var pa = document.getElementById('pa');
 //      
 //     canvas2.appendChild(img);
 //  });
-
+	console.log(123);
 	html2canvas(pa).then(function(canvas) {
-
-	        var image = canvas.toDataURL("image/jepg");
+			
+	        var image = canvas.toDataURL("image/jpg");
 	        
-
+			console.log(123);
+//	        console.log(image);
 	        
 	        var base=encodeURIComponent(image);//转码
     
