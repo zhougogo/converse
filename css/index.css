@@ -204,7 +204,7 @@ img{
 }
 .personInfo2 .bottom{
 	position: absolute;
-	top: 50%;
+	top: 52%;
 	/*bottom: 20%;*/
 	left: 30%;
 }
@@ -377,6 +377,7 @@ img{
 .spanText{
 
 	color: #183d8e;
+	margin:0px 1px ;
 
 }
 .spanText7{
