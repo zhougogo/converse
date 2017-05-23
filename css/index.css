@@ -245,7 +245,7 @@ img{
 .personInfo input{
 	width: 12vw;
 	background: transparent;
-	border: none;
+	border: 0;
 	border-bottom: 1px solid #fff;
 	outline: none;
 	color: #fff;
