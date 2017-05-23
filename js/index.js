@@ -241,26 +241,40 @@ $('.page3 .container').height(height);
 
 function clip(){
 
-	var pa = document.getElementById('pa');
+//	var pa = document.getElementById('pa');
+//
+var canvas2 = document.getElementById('canvas2');
+var pa = document.getElementById('pa');
 
-	var canvas2 = document.getElementById('canvas2');
+//domtoimage.toPng(node)
+//  .then(function (dataUrl) {
+//  	
+//      var img = new Image();
+//      
+//      img.src = dataUrl;
+//      
+//      console.log(123);
+//      
+//     canvas2.appendChild(img);
+//  });
 
 	html2canvas(pa).then(function(canvas) {
 
-//	        canvas2.appendChild(canvas);
-	        var image = canvas.toDataURL("image/png");
+	        var image = canvas.toDataURL("image/jepg");
 	        
 
 	        
 	        var base=encodeURIComponent(image);//转码
-//	        
-	        canvas2.src = image;
-//	        
-	        ajaxUpLoad(base);
-	        var pHtml = "<img src="+image+" />";  
-	        $('#html2canvas').html(pHtml);  
+    
+      		canvas2.src = image;
+      		
+//    		console.log(base);
+	        
+//     		 ajaxUpLoad(base);
+//	        var pHtml = "<img src="+image+" />";  
+//	        $('#html2canvas').html(pHtml);  
 
-	     })	
+     	})	
 	}
 
 //图片上传
@@ -298,7 +312,7 @@ for(var i = 0;i < space.length;i++){
 		
 		for(var j = 0;j < eText.length;j++){
 			
-			console.log(eText.substring(j,j+1))
+//			console.log(eText.substring(j,j+1))
 			
 			
 			
