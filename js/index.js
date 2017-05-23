@@ -250,7 +250,7 @@ function clip(){
 //	        canvas2.appendChild(canvas);
 	        var image = canvas.toDataURL("image/png");
 	        
-	        alert(image);
+
 	        
 	        var base=encodeURIComponent(image);//转码
 	        
