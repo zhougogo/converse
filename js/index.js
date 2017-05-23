@@ -247,16 +247,16 @@ function clip(){
 
 	html2canvas(pa).then(function(canvas) {
 
-//	        canvas2.appendChild(canvas);
-	        var image = canvas.toDataURL("image/png");
+	        canvas2.appendChild(canvas);
+//	        var image = canvas.toDataURL("image/png");
 	        
 
 	        
-	        var base=encodeURIComponent(image);//转码
-	        
-	        canvas2.src = image;
-	        
-	        ajaxUpLoad(base);
+//	        var base=encodeURIComponent(image);//转码
+//	        
+//	        canvas2.src = image;
+//	        
+//	        ajaxUpLoad(base);
 //	        var pHtml = "<img src="+image+" />";  
 //	        $('#html2canvas').html(pHtml);  
 
