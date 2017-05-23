@@ -81,6 +81,7 @@ function count2(){
 	var random = 0;
 
 	var num = 0;
+	
 	$('.page5').addClass('pageBegin');
 	
 	$('.page5 .loadText span').html(random+'%');
@@ -225,9 +226,9 @@ $('.backBtm img').click(function(){
 //第三页
 var height = $(window).height();
 
-$('.page3').height(height);
+$('.page3 .container').height(height);
 
-$('.page3 .page3Container').height(height)
+//$('.page3 .page3Container').height(height)
 
 
 
@@ -241,10 +242,38 @@ function clip(){
 
 	html2canvas(pa).then(function(canvas) {
 
-	         canvas2.appendChild(canvas);
+//	        canvas2.appendChild(canvas);
+	        var image = canvas.toDataURL("image/png");
+	        
+	        var base=encodeURIComponent(image);//转码
+	        
+	        canvas2.src = image;
+	        
+	        ajaxUpLoad(base);
+//	        var pHtml = "<img src="+image+" />";  
+//	        $('#html2canvas').html(pHtml);  
 
 	     })	
 	}
+
+//图片上传
+function ajaxUpLoad(base){
+    $.ajax({
+        type: "POST",
+        url: "",
+        async: true,
+        data: {base:base},
+        dataType: "json",
+        success: function (data) {
+        	
+        	console.log(success);
+        },
+        error: function (err) {
+        	
+        	console.log(error);
+        }
+    });
+}
 
 
 // 加白条
