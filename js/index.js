@@ -175,8 +175,11 @@ $(function(){
 		$('.face').show().siblings().hide();
 
 		$('.personInfo').show();
+		$('.personInfo3').show();
+		
 
 		$('.personInfo2').hide();
+		$('.personInfo4').hide();
 
 	});
 
@@ -187,8 +190,10 @@ $(function(){
 		$('.face').show().siblings().hide();
 
 		$('.personInfo2').show();
+		$('.personInfo4').show();
 
 		$('.personInfo').hide();
+		$('.personInfo3').hide();
 
 	})
 
