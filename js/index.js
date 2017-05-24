@@ -70,7 +70,7 @@ $(function(){
 
 		$('.page33').show();
 		
-		clip();
+	
 
 		var random = 0;
 
@@ -118,7 +118,7 @@ $(function(){
 
 				clearInterval(timer);
 
-				
+				clip();
 
 				$('.page6').show().siblings().hide();
 
@@ -189,6 +189,10 @@ $(function(){
 	$('.footerBtnLeft').click(function() {
 
 		$('.page3 input').val('');
+		
+		$('.popup').show();
+		
+		$('#view').css('background-image','');
 
 		console.log(123);
 	})
@@ -199,7 +203,7 @@ $(function(){
 
 		$('.face').show().siblings().hide();
 
-		console.log(123);
+
 	})
 	//第三页
 	var height = $(window).height();
@@ -216,26 +220,20 @@ $(function(){
 		//
 		var canvas2 = document.getElementById('canvas2');
 		var pa = document.getElementById('pa');
+		
+		html2canvas(pa, {
+            onrendered: function(canvas) {
+                canvas2.appendChild(canvas);
+            }
+        });
 
-		//domtoimage.toPng(node)
-		//  .then(function (dataUrl) {
-		//  	
-		//      var img = new Image();
-		//      
-		//      img.src = dataUrl;
-		//      
-		//      console.log(123);
-		//      
-		//     canvas2.appendChild(img);
-		//  });
+//		html2canvas(pa).then(function(canvas) {
 
-		html2canvas(pa).then(function(canvas) {
+//			var image = canvas.toDataURL("image/jpg");
 
-			var image = canvas.toDataURL("image/jpg");
+			//var base = encodeURIComponent(image);
 
-			var base = encodeURIComponent(image); //转码
-
-			canvas2.src = image;
+			//canvas2.src = image;
 
 			//    		console.log(base);
 
@@ -243,7 +241,7 @@ $(function(){
 			//	        var pHtml = "<img src="+image+" />";  
 			//	        $('#html2canvas').html(pHtml);  
 
-		})
+		//})
 
 	}
 	//图片上传
