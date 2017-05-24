@@ -218,14 +218,10 @@ $(function(){
 
 	$('.page3 .container').height(height);
 
-	//$('.page3 .page3Container').height(height)
-
 	//截屏
 
 	function clip() {
 
-		//	var pa = document.getElementById('pa');
-		//
 		var canvas2 = document.getElementById('canvas2');
 		var pa = document.getElementById('pa');
 		
@@ -310,59 +306,37 @@ $(function(){
 
 //作字符限制
  limit();
- 
 function limit(){
 	
-	var space = $('.text');
-	
-
-		
 		var reg = /[a-zA-Z0-9]+/;
-		
-		var reg2 = /^[\u4e00-\u9fa5]$/;
-		var english = [];
-		var tText = [];
-		
-		$('.text1').get(0).oninput=function(){
-
-			var lText = this.value.substring(this.value.length-1,this.value.length);
-			
-			if(reg.test(lText)){
-				
-				english.push(lText);
-				
-			}else if(reg2.test(lText)){
-				
-				tText.push(lText);
+		var maxLength = [8,6,6,12,12,24,10];
+		$('.text').each(function(index){
+			this.oninput = function(){
+				var len = 0;
+				var cn = 0;
+				for(var i = 0; i < this.value.length; i++){
+					if(reg.test(this.value[i])){
+						len++;
+					}else{
+						len += 2;
+						if(len-2 < maxLength[index]){
+							cn++;
+						}
+					}
+				}
+				if(len > maxLength[index]){
+//					console.log(len)
+					var val = this.value.substring(0,maxLength[index]-cn);
+					this.value = val;
+				}
 			}
-			
-			
-			var len = english.length/2 + tText.length;
-		
-			console.log(len);
-//			if(reg.test(this.value)){
-//				
-//				var len = this.value.length;
-//				
-//			}
-			
-			
-			
-		}
-
-		
-		
-		  
-
-		
+		});
 		
 
-		
-		
-
-	
 	
 }
 
-
+		
 })
+
+

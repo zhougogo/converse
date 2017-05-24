@@ -317,10 +317,10 @@ img{
 }
 .page3 .pic{
 	position: absolute;
-	left: 42%;
-	top: 10%;
-	width: 14%;
-	height: 32%;
+	left: 43%;
+	top: 9%;
+	width: 13%;
+	height: 35%;
 	z-index: -1;
 	/*background: red;*/
 }
@@ -363,7 +363,7 @@ img{
 	width: 46%;
 	z-index: 10;
 	left: 40%;
-	top: 44%;
+	top: 41%;
 	pointer-events:none;
 }
 .page4 .picture{
