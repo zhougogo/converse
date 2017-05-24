@@ -116,7 +116,7 @@ img{
 
 /*第三页*/
 /*第三页*/
-.page3{
+.page3,.page33{
 	font-family: 'FZYTK.TTF';
 	alignment-baseline: alphabetic;
 	width: 100%;
@@ -130,7 +130,7 @@ img{
 	right: 0%;
 	margin: auto;
 }
-.page3 .bg{
+.page3 .bg,.page33 .bg{
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -140,7 +140,7 @@ img{
 	right: 0%;
 	margin: auto;
 }
-.page3 .bg img{
+.page3 .bg img,.page33 .bg img{
 	width: 100%;
 	height: 100%;
 }
@@ -153,12 +153,16 @@ img{
 	top: 50vw;
 	left: 39.5vw
 }
+.personInfo{
+	top: 60%;
+}
+.personInfo3{
+	top: 60%;
+}
 .personInfo,.personInfo3{
 	position: absolute;
-	top: 60%;
+
 	font-size: 3.0vw;
-
-
 	color: #fff;
 	background-size: 100%;
 	width: 80%;
@@ -276,7 +280,7 @@ img{
 	right: 5vw;
 }
 /*第三页模态框*/
-.page3{
+.page3,.page33{
 	position: absolute;
 	top: 0%;
 	bottom: 0%;
