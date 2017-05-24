@@ -83,7 +83,7 @@
 					<div class="popup ">
 						<label class="modal modal1">
 							<img src="img/photoword/hand.png">
-							<input type="file" id="gocamera" style="display: none">
+							<input type="file" id="gocamera" capture="camera" style="display: none">
 						</label>
 					</div>
 					<div class="popup2 hidden">
@@ -189,13 +189,14 @@
 		</div>
 	</body>
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/html2canvas.js"></script>
 	<script src="js/lib/iscroll-zoom.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/lib/hammer.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/lib/lrz.all.bundle.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/lib/PhotoClip.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/dom-to-image.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src="js/html2canvas.js"></script>
+
+
 	<script>
 		var pc = new PhotoClip('#clipArea', {
 				outputSize: 140,
