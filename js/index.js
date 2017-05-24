@@ -1,7 +1,7 @@
 //第一页loading
 $(function(){
 
-//	count();
+	count();
 
 	function count() {
 
