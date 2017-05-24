@@ -141,12 +141,12 @@ $(function(){
 		
 		for(var i = 0; i < $('.personInfo .text').length + 1; i++) {
 
-			$('.personInfo .spanText' + i).html($('.personInfo .text' + i).val());
+			$('.personInfo .spanText' + i).html($('.personInfo3 .text' + i).val());
 
 		}
 		for(var i = 0; i < $('.personInfo2 .text').length + 1; i++) {
 
-			$('.personInfo2 .spanText' + i).html($('.personInfo2 .text' + i).val());
+			$('.personInfo2 .spanText' + i).html($('.personInfo4 .text' + i).val());
 
 		}
 

@@ -153,7 +153,7 @@ img{
 	top: 50vw;
 	left: 39.5vw
 }
-.personInfo{
+.personInfo,.personInfo3{
 	position: absolute;
 	top: 60%;
 	font-size: 3.0vw;
@@ -166,7 +166,7 @@ img{
 .personInfo img{
 	width: 80%;
 }
-.personInfo p{
+.personInfo p,.personInfo3 p{
 	line-height: 4.8vw;
 	margin-left: 9vw;
 
@@ -187,7 +187,7 @@ img{
 	line-height: 4.2vw;
 	margin-left: 17vw;
 	position: absolute;
-	top: 108%;
+	top: 120%;
 }
 .page33 .personInfo p:last-child{
 	top: 100%;
@@ -195,7 +195,7 @@ img{
 	margin-left: 17vw;
 	position: absolute;
 }
-.personInfo2{
+.personInfo2,.personInfo4{
 	position: absolute;
 	top: 56%;
 	font-size: 2.4vw;
@@ -206,16 +206,20 @@ img{
 	height: 40%;
 
 }
-.personInfo2 .top{
+
+.personInfo2 .top,.personInfo4 .top{
 	position: absolute;
 	top: 12%;
 	left: 30%;
 }
-.personInfo2 .bottom{
+.personInfo2 .bottom,.personInfo4 .bottom{
 	position: absolute;
 	top: 52%;
 	/*bottom: 20%;*/
 	left: 30%;
+}
+.page33 .personInfo4{
+	top: 56%;
 }
 .personInfo2 input{
 	border:none;
@@ -237,10 +241,11 @@ img{
 	position: absolute;
 	z-index: -10;
 }
-.page33 .personInfo p:last-child{
+.page33 .personInfo3 p:last-child{
 	top: 92%;
+	left: 8%;
 }
-.page33 .personInfo .lastText{
+.page33 .personInfo3 .lastText{
 	
 	top: 115%;
 }
