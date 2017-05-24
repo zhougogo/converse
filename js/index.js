@@ -137,22 +137,21 @@ $(function(){
 
 		// console.log(123);
 		//高冷模式和话唠模式
-
+		$('.page33').show();
 		
 		for(var i = 0; i < $('.personInfo .text').length + 1; i++) {
 
-			$('.personInfo .spanText' + i).html($('.personInfo3 .text' + i).val());
+			$('.personInfo3 .spanText' + i).html($('.personInfo .text' + i).val());
+
 
 		}
 		for(var i = 0; i < $('.personInfo2 .text').length + 1; i++) {
 
-			$('.personInfo2 .spanText' + i).html($('.personInfo4 .text' + i).val());
+			$('.personInfo4 .spanText' + i).html($('.personInfo2 .text' + i).val());
 
 		}
 
 		$('.page5').show();
-		
-		$('.page33').show();
 		
 		$('.face').hide();
 		
