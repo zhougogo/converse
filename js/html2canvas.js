@@ -1,4 +1,4 @@
-window.onload = function() {
+
 
 	/*
 	  html2canvas 0.5.0-beta3 <http://html2canvas.hertzen.com>
@@ -3580,4 +3580,3 @@ window.onload = function() {
 		}, {}, [4])(4)
 	});
 
-}
