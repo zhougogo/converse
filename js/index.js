@@ -69,6 +69,8 @@ $(function(){
 	function count2() {
 
 		$('.page33').show();
+		
+		clip();
 
 		var random = 0;
 
@@ -116,7 +118,7 @@ $(function(){
 
 				clearInterval(timer);
 
-				clip();
+				
 
 				$('.page6').show().siblings().hide();
 
