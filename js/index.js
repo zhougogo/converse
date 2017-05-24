@@ -53,8 +53,14 @@ $(function(){
 				clearInterval(timer);
 
 				$('.page2').show().siblings().hide();
+				
+				setTimeout(function(){
+					
+					$('.page2').animate({ 'top': '-200%' }, 3000);
+					
+				},1500)
 
-				$('.page2').animate({ 'top': '-200%' }, 3000);
+				
 			}
 
 			$('.page1 .loadText span').html(random + '%');
@@ -67,11 +73,7 @@ $(function(){
 	//海报生成中
 
 	function count2() {
-
 		
-		
-	
-
 		var random = 0;
 
 		var num = 0;
@@ -235,11 +237,15 @@ $(function(){
 
 		html2canvas(pa).then(function(canvas) {
 			
-			canvas2.appendChild(canvas);
+			var image = canvas.toDataURL("image/jpg");
+			
+			canvas2.src = image;
+			
+//			canvas2.appendChild(canvas);
 			
 		})
 
-//			var image = canvas.toDataURL("image/jpg");
+
 
 			//var base = encodeURIComponent(image);
 
