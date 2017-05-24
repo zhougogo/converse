@@ -13,7 +13,7 @@
 
 	</head>
 	<body>
-		<div class="page page1 pageBegin ">
+		<div class="page page1 pageBegin hidden">
 	
 			<div class="loadText pos">
 				Loading...<span>100%</span>
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 		</div>
-		<div class=" page3 face hidden" id="page3">
+		<div class=" page3 face " id="page3">
 			<div class="container">
 				<div class="bg">
 					<img src="img/photoword/shoneBody.png"/>
@@ -41,7 +41,7 @@
 				<div class="page page3Container">
 					<div class="personInfo pos ">
 						<p>
-							我是 <input class="text1 text" class="text2" type="text" name="">,
+							我是 <input class="text1 text" class="text2" type="text" name="" maxlength="8">,
 							一个 <input class="text2 text" type="text" name="">
 							的 <input class="text3 text" type="text" name="">。
 						</p>
@@ -80,7 +80,7 @@
 						<img src="img/camera/logo.png" class="pos">
 						<img src="img/photoword/generate.png" class="footerBtnRight">
 					</div>
-					<div class="popup ">
+					<div class="popup hidden">
 						<label class="modal modal1">
 							<img src="img/photoword/hand.png">
 							<input type="file" id="gocamera" capture="camera" style="display: none">
@@ -174,8 +174,8 @@
 			</div>
 		</div>
 		<div class="page page6 hidden">
-			<div class="center pos">
-				<img id="canvas2" src="" alt="" />
+			<div class="center pos"  id="canvas2">
+				<!--<img src="" alt="" />-->
 			</div>
 			<div class="erweima">
 				<img src="img/poster/erweima.png"/>

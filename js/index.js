@@ -1,7 +1,7 @@
 //第一页loading
 $(function(){
 
-	count();
+//	count();
 
 	function count() {
 
@@ -237,11 +237,11 @@ $(function(){
 
 		html2canvas(pa).then(function(canvas) {
 			
-			var image = canvas.toDataURL("image/jpg");
+//			var image = canvas.toDataURL("image/jpg");
+//			
+//			canvas2.src = image;
 			
-			canvas2.src = image;
-			
-//			canvas2.appendChild(canvas);
+			canvas2.appendChild(canvas);
 			
 		})
 
@@ -294,7 +294,7 @@ $(function(){
 
 			for(var j = 0; j < eText.length; j++) {
 
-				//			console.log(eText.substring(j,j+1))
+//				console.log(eText.substring(j,j+1));
 
 			}
 
@@ -305,4 +305,64 @@ $(function(){
 		}
 
 	}
+
+
+
+//作字符限制
+ limit();
+ 
+function limit(){
+	
+	var space = $('.text');
+	
+
+		
+		var reg = /[a-zA-Z0-9]+/;
+		
+		var reg2 = /^[\u4e00-\u9fa5]$/;
+		var english = [];
+		var tText = [];
+		
+		$('.text1').get(0).oninput=function(){
+
+			var lText = this.value.substring(this.value.length-1,this.value.length);
+			
+			if(reg.test(lText)){
+				
+				english.push(lText);
+				
+			}else if(reg2.test(lText)){
+				
+				tText.push(lText);
+			}
+			
+			
+			var len = english.length/2 + tText.length;
+		
+			console.log(len);
+//			if(reg.test(this.value)){
+//				
+//				var len = this.value.length;
+//				
+//			}
+			
+			
+			
+		}
+
+		
+		
+		  
+
+		
+		
+
+		
+		
+
+	
+	
+}
+
+
 })
