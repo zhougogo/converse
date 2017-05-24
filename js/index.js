@@ -137,7 +137,7 @@ $(function(){
 
 		// console.log(123);
 		//高冷模式和话唠模式
-		$('.page33').show();
+		
 		
 		for(var i = 0; i < $('.personInfo .text').length + 1; i++) {
 
@@ -150,8 +150,10 @@ $(function(){
 			$('.personInfo4 .spanText' + i).html($('.personInfo2 .text' + i).val());
 
 		}
-
+		
 		$('.page5').show();
+		
+		$('.page33').show();
 		
 		$('.face').hide();
 		
