@@ -74,6 +74,8 @@ $(function(){
 
 	function count2() {
 		
+		$('.page33').show();
+		
 		var random = 0;
 
 		var num = 0;
@@ -117,7 +119,9 @@ $(function(){
 			}
 
 			if(num > 5) {
-
+				
+				clip();
+				
 				clearInterval(timer);
 
 			
@@ -159,7 +163,7 @@ $(function(){
 		
 		
 		
-		clip();
+		
 		
 		
 		
@@ -235,7 +239,7 @@ $(function(){
 	function clip() {
 		
 	
-		$('.page33').show();
+		
 		var canvas2 = document.getElementById('canvas2');
 		var pa = document.getElementById('pa');
 		
