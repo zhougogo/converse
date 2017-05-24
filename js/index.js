@@ -68,7 +68,7 @@ $(function(){
 
 	function count2() {
 
-		$('.page33').show();
+		
 		
 	
 
@@ -118,7 +118,7 @@ $(function(){
 
 				clearInterval(timer);
 
-				clip();
+			
 
 				$('.page6').show().siblings().hide();
 
@@ -135,7 +135,8 @@ $(function(){
 
 		// console.log(123);
 		//高冷模式和话唠模式
-
+		$('.page33').show();
+		
 		for(var i = 0; i < $('.personInfo .text').length + 1; i++) {
 
 			$('.personInfo .spanText' + i).html($('.personInfo .text' + i).val());
@@ -148,8 +149,13 @@ $(function(){
 		}
 
 		$('.page5').show();
+		
 		$('.face').hide();
-
+		
+		clip();
+		
+		
+		
 		//截取图片
 
 		// $('.page5').show().siblings().hide();
@@ -194,7 +200,7 @@ $(function(){
 		
 		$('#view').css('background-image','');
 
-		console.log(123);
+
 	})
 
 	//重新选择照片

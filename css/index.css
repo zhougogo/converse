@@ -50,6 +50,9 @@ img{
 .hidden{
 	display: none;
 }
+.face{
+	position: absolute;
+}
 /*第一页*/
 .pageBegin{
 	background: url(../img/p1-loading.gif) no-repeat center center;
@@ -320,6 +323,10 @@ img{
 	height: 32%;
 	z-index: -1;
 	/*background: red;*/
+}
+.page33{
+	position: absolute;
+	z-index: -5;
 }
 /*第四页*/
 .page4 .bg{
