@@ -74,7 +74,7 @@ $(function(){
 
 	function count2() {
 		
-		$('.page33').show();
+		
 		
 		var random = 0;
 
@@ -117,10 +117,10 @@ $(function(){
 				}
 
 			}
-
+			clip();
 			if(num > 5) {
 				
-				clip();
+				
 				
 				clearInterval(timer);
 
@@ -166,7 +166,7 @@ $(function(){
 		
 		
 		
-		
+		$('.page33').show();
 		//截取图片
 
 		// $('.page5').show().siblings().hide();
