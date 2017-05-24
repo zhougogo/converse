@@ -1,5 +1,5 @@
 //第一页loading
-window.onload = function() {
+$(function(){
 
 	count();
 
@@ -289,4 +289,4 @@ window.onload = function() {
 		}
 
 	}
-}
+})
