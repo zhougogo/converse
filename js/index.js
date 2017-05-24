@@ -221,13 +221,17 @@ $(function(){
 		var canvas2 = document.getElementById('canvas2');
 		var pa = document.getElementById('pa');
 		
-		html2canvas(pa, {
-            onrendered: function(canvas) {
-                canvas2.appendChild(canvas);
-            }
-        });
+//		html2canvas(pa, {
+//          onrendered: function(canvas) {
+//              canvas2.appendChild(canvas);
+//          }
+//      });
 
-//		html2canvas(pa).then(function(canvas) {
+		html2canvas(pa).then(function(canvas) {
+			
+			canvas2.appendChild(canvas);
+			
+		})
 
 //			var image = canvas.toDataURL("image/jpg");
 
