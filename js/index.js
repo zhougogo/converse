@@ -138,7 +138,7 @@ $(function(){
 		// console.log(123);
 		//高冷模式和话唠模式
 		
-		$('.page33').show();
+		
 		for(var i = 0; i < $('.personInfo .text').length + 1; i++) {
 
 			$('.personInfo3 .spanText' + i).html($('.personInfo .text' + i).val());
@@ -228,14 +228,14 @@ $(function(){
 
 	$('.face .container').height(height);
 	
-	$('.page33 .page33Container').height(height);
+//	$('.page33 .page33Container').height(height);
 
 	//截屏
 
 	function clip() {
 		
 	
-
+		$('.page33').show();
 		var canvas2 = document.getElementById('canvas2');
 		var pa = document.getElementById('pa');
 		
