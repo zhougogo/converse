@@ -74,8 +74,6 @@ $(function(){
 
 	function count2() {
 		
-		
-		
 		var random = 0;
 
 		var num = 0;
@@ -117,11 +115,9 @@ $(function(){
 				}
 
 			}
-			clip();
+
 			if(num > 5) {
-				
-				
-				
+
 				clearInterval(timer);
 
 			
@@ -155,18 +151,33 @@ $(function(){
 
 		}
 		
-		$('.page5').show();
-		
-		
-		
 		$('.face').hide();
 		
-		
-		
-		
-		
+		$('.page5').show();
 		
 		$('.page33').show();
+			
+	
+		
+		if($('.page33').css('display') == 'block'){
+			
+			setTimeout(function(){
+				
+				clip();
+				
+				
+			},2000)
+		}
+		
+		
+
+		
+		
+		
+	
+		
+		
+		
 		//截取图片
 
 		// $('.page5').show().siblings().hide();
@@ -232,14 +243,14 @@ $(function(){
 
 	$('.face .container').height(height);
 	
-//	$('.page33 .page33Container').height(height);
+	$('.page33 .page33Container').height(height);
 
 	//截屏
 
 	function clip() {
 		
 	
-		
+	
 		var canvas2 = document.getElementById('canvas2');
 		var pa = document.getElementById('pa');
 		
