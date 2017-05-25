@@ -151,6 +151,7 @@ $(function(){
 
 		}
 		
+		
 		$('.face').hide();
 		
 		$('.page5').show();
